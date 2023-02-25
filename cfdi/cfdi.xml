@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" Version="4.0" Serie="A" Folio="12345" Fecha="2022-02-23T11:26:45" FormaPago="01" SubTotal="100.00" Moneda="MXN" Total="116.00" TipoDeComprobante="I" MetodoPago="PUE" LugarExpedicion="06010">
+    <cfdi:Emisor Rfc="AAD990814BP7" Nombre="Xaime Weir Rojo" RegimenFiscal="601"/>
+    <cfdi:Receptor Rfc="AAA010101AAA" Nombre="Juan Perez" UsoCFDI="G03"/>
+    <cfdi:Conceptos>
+        <cfdi:Concepto ClaveProdServ="01010101" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="Producto 1" ValorUnitario="100.00" Importe="100.00"/>
+    </cfdi:Conceptos>
+    <cfdi:Impuestos TotalImpuestosTrasladados="16.00">
+        <cfdi:Traslados>
+            <cfdi:Traslado Base="100.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.1600" Importe="16.00"/>
+        </cfdi:Traslados>
+    </cfdi:Impuestos>
+    <cfdi:Complemento>
+        <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" Version="1.0" UUID="63FAF135-6E18-4735-8A5F-27E9D7AC0A20" FechaTimbrado="2022-02-23T11:27:00" RfcProvCertif="XEXX010101000" SelloCFD="sello-cfd" NoCertificadoSAT="00001000000410240216" SelloSAT="sello-sat"/>
+
+    </cfdi:Complemento>
+
+</cfdi:Comprobante>
