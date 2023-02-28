@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" Version="4.0" Serie="A" Folio="12345" Fecha="2022-02-23T11:26:45" FormaPago="01" SubTotal="100.00" Moneda="MXN" Total="116.00" TipoDeComprobante="I" MetodoPago="PUE" LugarExpedicion="06010">
-    <cfdi:Emisor Rfc="AAD990814BP7" Nombre="Xaime Weir Rojo" RegimenFiscal="601"/>
-    <cfdi:Receptor Rfc="AAA010101AAA" Nombre="Juan Perez" UsoCFDI="G03"/>
-    <cfdi:Conceptos>
-        <cfdi:Concepto ClaveProdServ="01010101" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="Producto 1" ValorUnitario="100.00" Importe="100.00"/>
-    </cfdi:Conceptos>
-    <cfdi:Impuestos TotalImpuestosTrasladados="16.00">
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="VG" Folio="11814" Fecha="2022-05-30T11:58:16" FormaPago="01" NoCertificado="30001000000400002438" SubTotal="2572.95" Moneda="MXN" TipoCambio="1" Total="2725.59" TipoDeComprobante="I" Exportacion="01" MetodoPago="PUE" LugarExpedicion="52080" >
+  <cfdi:Emisor Rfc="IVD920810GU2" Nombre="INNOVACION VALOR Y DESARROLLO SA" RegimenFiscal="601"/>
+  <cfdi:Receptor Rfc="XAXX010101000" Nombre="PUBLICO EN GENERAL" DomicilioFiscalReceptor="52080" RegimenFiscalReceptor="616" UsoCFDI="S01"/>
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="10191509" NoIdentificacion="PU03180194" Cantidad="12.000000" ClaveUnidad="KGM" Descripcion="PRESTO 5 KILO (PRODUCTOS SANIDAD URBANA)" ValorUnitario="159.0000" Importe="1908.00" ObjetoImp="02">
+      <cfdi:Impuestos>
         <cfdi:Traslados>
-            <cfdi:Traslado Base="100.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.1600" Importe="16.00"/>
+          <cfdi:Traslado Base="1908.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.080000" Importe="152.64"/>
         </cfdi:Traslados>
-    </cfdi:Impuestos>
-    <cfdi:Complemento>
-        <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" Version="1.0" UUID="63FAF135-6E18-4735-8A5F-27E9D7AC0A20" FechaTimbrado="2022-02-23T11:27:00" RfcProvCertif="XEXX010101000" SelloCFD="sello-cfd" NoCertificadoSAT="00001000000410240216" SelloSAT="sello-sat"/>
-
-    </cfdi:Complemento>
-
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="10191509" NoIdentificacion="FM03130005" Cantidad="1.000000" ClaveUnidad="H87" Descripcion="QUICK FUME 500 PASTILLAS (FUMIGANTE)" ValorUnitario="664.9500" Importe="664.95" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="664.95" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.00"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="152.64">
+    <cfdi:Traslados>
+      <cfdi:Traslado Base="1908.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.080000" Importe="152.64"/>
+      <cfdi:Traslado Base="664.95" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.00"/>
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
 </cfdi:Comprobante>
